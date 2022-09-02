@@ -1,0 +1,20 @@
+@use "sass:math";
+
+
+// Colors
+
+$white: #fff;
+$black: #000;
+$accent: orange;
+$colorLink: #fff;
+$colorLinkHover: $accent;
+
+// Fonts
+
+// Default Varibles
+$defaultFont: "Geometria", sans-serif;
+$fontWeight: 400;
+$fontSize: 18;
+$lineHeight: 25;
+$text-color: #494949;
+$container: 260px;

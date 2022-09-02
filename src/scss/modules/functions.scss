@@ -1,0 +1,9 @@
+@function rem($px, $base: 16) {
+  $result: math.div($px, $base)+rem;
+  @return $result;
+}
+
+@function em($px, $base: 16) {
+  $result: math.div($px, $base)+em;
+  @return $result;
+}

@@ -1,0 +1,27 @@
+body {
+  font-family: $defaultFont;
+  font-weight: $fontWeight;
+  line-height: math.div($lineHeight, $fontSize);
+  font-size: rem($fontSize);
+  color: $text-color;
+  height: 100%;
+
+  &.locked {
+    overflow: hidden;
+  }
+}
+
+// wrapper
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: $container + 30;
+  margin: 0 auto;
+  padding: 0 15px;
+}

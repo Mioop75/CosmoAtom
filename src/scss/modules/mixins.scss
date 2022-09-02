@@ -1,0 +1,28 @@
+
+@mixin font($font-size, $line-height: 24, $margin: false, $margin-bottom: 24) {
+  font-size: rem($font-size);
+  line-height: math.div($line-height, $font-size);
+
+  @if $margin ==true {
+    &:not(:last-child) {
+      margin-bottom: em($margin-bottom, $font-size);
+    }
+  }
+}
+
+@mixin pd($font-size, $type: false, $top: 16, $right: 16, $bottom: 16, $left: 16) {
+  @if $type ==min {
+    padding: em($top, $font-size) em($right, $font-size);
+  }
+
+  @else {
+    padding: em($top, $font-size) em($right, $font-size) em($bottom, $font-size) em($left, $font-size);
+  }
+}
+
+@mixin grid($width, $height, $gutter: 20px, $maxWidth: 1fr) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($width, $maxWidth));
+  grid-auto-rows: minmax($height, auto);
+  gap: $gutter;
+}

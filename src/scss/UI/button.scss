@@ -1,0 +1,38 @@
+.btn {
+  cursor: pointer;
+  background: linear-gradient(280.29deg, #667eea 10.4%, #764ba2 91.8%);
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: rem(16);
+  text-align: center;
+  padding: em(16, 16);
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg,
+  img {
+    margin-right: 7px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    * + * {
+      margin-left: 5px;
+    }
+  }
+
+  &--primary {
+    background: #fff;
+    border: 1px solid #5063BF;
+    color: #5063BF;
+  }
+}
