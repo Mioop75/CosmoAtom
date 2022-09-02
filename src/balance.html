@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include("html/head.html",
+  {
+  "title": "Balance"
+  })
+</head>
+
+<body class="webp">
+  <div class="wrapper">
+    <main class="main">
+      <div class="balance">
+        <div class="container">
+          <div class="info">Current Balance</div>
+          <div class="bill">0.0000 ATOM</div>
+          <div class="block">
+            <div class="block__img">
+              <img src="img/wallet-icon.svg" alt="Иконка">
+            </div>
+            <div class="block__info">
+              <span>COSMOS WALLET</span>
+              <span>73M8uZ3...AMT9giV</span>
+            </div>
+            <div class="block__price">
+              $0.00
+            </div>
+          </div>
+          <div class="btn__list">
+            <a href="send.html" class="btn">
+              <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.83866 3.90031L2.60702 8.13195C2.31117 8.42781 1.8315 8.4278 1.53565 8.13195C1.2398 7.8361 1.2398 7.35643 1.53565 7.06058L6.88913 1.70711C7.27965 1.31658 7.91282 1.31658 8.30334 1.70711L13.6568 7.06058C13.9527 7.35643 13.9527 7.8361 13.6568 8.13195C13.361 8.42781 12.8813 8.4278 12.5854 8.13195L8.35381 3.90031V12.7424C8.35381 13.1608 8.01463 13.5 7.59624 13.5C7.17784 13.5 6.83866 13.1608 6.83866 12.7424L6.83866 3.90031Z"
+                  fill="white" stroke="white" />
+              </svg>
+              Send
+            </a>
+            <a href="receive.html" class="btn">
+              <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.83866 10.5997L2.60702 6.36805C2.31117 6.07219 1.8315 6.0722 1.53565 6.36805C1.2398 6.6639 1.2398 7.14357 1.53565 7.43942L6.88913 12.7929C7.27965 13.1834 7.91282 13.1834 8.30334 12.7929L13.6568 7.43942C13.9527 7.14357 13.9527 6.6639 13.6568 6.36805C13.361 6.07219 12.8813 6.0722 12.5854 6.36805L8.35381 10.5997V1.75757C8.35381 1.33918 8.01463 1 7.59624 1C7.17784 1 6.83866 1.33918 6.83866 1.75757L6.83866 10.5997Z"
+                  fill="white" stroke="white" />
+              </svg>
+              Receive
+            </a>
+            <a href="change.html" class="btn">
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.75 7C6.75 6.58579 6.41421 6.25 6 6.25C5.58579 6.25 5.25 6.58579 5.25 7L6.75 7ZM5.46967 18.5303C5.76256 18.8232 6.23744 18.8232 6.53033 18.5303L11.3033 13.7574C11.5962 13.4645 11.5962 12.9896 11.3033 12.6967C11.0104 12.4038 10.5355 12.4038 10.2426 12.6967L6 16.9393L1.75736 12.6967C1.46447 12.4038 0.989592 12.4038 0.696699 12.6967C0.403805 12.9896 0.403805 13.4645 0.696699 13.7574L5.46967 18.5303ZM5.25 7L5.25 18L6.75 18L6.75 7L5.25 7Z"
+                  fill="white" />
+                <path
+                  d="M13.75 12C13.75 12.4142 13.4142 12.75 13 12.75C12.5858 12.75 12.25 12.4142 12.25 12L13.75 12ZM12.4697 0.46967C12.7626 0.176777 13.2374 0.176777 13.5303 0.46967L18.3033 5.24264C18.5962 5.53553 18.5962 6.01041 18.3033 6.3033C18.0104 6.59619 17.5355 6.59619 17.2426 6.3033L13 2.06066L8.75736 6.3033C8.46447 6.59619 7.98959 6.59619 7.6967 6.3033C7.40381 6.01041 7.40381 5.53553 7.6967 5.24264L12.4697 0.46967ZM12.25 12L12.25 1L13.75 1L13.75 12L12.25 12Z"
+                  fill="white" />
+              </svg>
+              Change
+            </a>
+          </div>
+          <div class="balance__info">My transactions</div>
+          <img src="img/filenotfound.svg" alt="" class="balance__img">
+          <div class="balance__not">No transactions found</div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

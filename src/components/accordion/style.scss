@@ -1,0 +1,28 @@
+.accordion {
+  --acordion-time: 0.3s;
+
+  &__control {
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    will-change: max-height;
+    transition: all var(--acordion-time) ease-out;
+  }
+}
+
+.accordion--active {
+  .accordion__content {
+    opacity: 1;
+  }
+}

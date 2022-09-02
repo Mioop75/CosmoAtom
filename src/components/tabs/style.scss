@@ -1,0 +1,30 @@
+.tabs {
+
+  &__list {}
+
+  &__content {}
+
+  &__panel {
+    display: none;
+  }
+
+  &__panel--active {
+    display: block;
+  }
+}
+
+.tabs-list {
+
+  &__item {}
+
+  &__btn {
+    &:focus {
+      color: #fff;
+      background-color: navy;
+    }
+  }
+
+  &__btn--active {
+    background-color: wheat;
+  }
+}

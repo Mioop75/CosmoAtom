@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      @@include("html/head.html",
+        {
+          "title": "Create wallet"
+        })
+    </head>
+    <body class="webp">
+      <div class="wrapper">
+        <main class="main">
+          <div class="create-wallet" >
+            <div class="container">
+              <h2 class="create-wallet__title">create-wallet</h2>
+              <div class="create-wallet__text">Enter your unique mnemonic phrase to enter the wallet.</div>
+              <div class="tags">
+                <div class="tag">
+                  Paste
+                </div>
+              </div>
+              <form class="create-wallet__form">
+                <textarea class="create-wallet__textarea" contenteditable></textarea>
+                <button type="submit" class="btn create-wallet__btn">Access wallet</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </body>
+</html>
